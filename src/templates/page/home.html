@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2 class=" text-blue-400">File Upload</h2>
+
+File form:
+<form method="POST" enctype="multipart/form-data" action="/upload">
+	<input type="hidden" name="file_id" value="aafueB5Quie" />
+	<input type="file" name="upfile" multiple/>
+	<input type="hidden" name="another_hidden_field" value="abcxyz" />
+	<input type="submit" value="Upload"/>
+    @css 'src/templates/page/outpout.css'
+</form>
+
+Text form:
+<form method="POST" enctype="multipart/form-data" action="/submit">
+	<input type="text" name="content1" value="abc" />
+	<input type="text" name="content2" value="xyz" />
+	<input type="submit" value="Submit content">
+</form>
+</body>
+</html>
